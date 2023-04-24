@@ -7,6 +7,7 @@ Maintainer: Mengxiao Wang
 Maintainer-email: mengxiaw@andrew.cmu.edu
 License: MIT
 Platform: UNKNOWN
+License-File: LICENSE
 
 A set of OpenAlex utilities
 

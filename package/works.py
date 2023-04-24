@@ -1,6 +1,5 @@
 """A works class for bibtex utilities."""
 import base64
-import argparse
 import bibtexparser
 import requests
 from bibtexparser.bwriter import BibTexWriter
@@ -49,7 +48,7 @@ class Works:
         with open("bibtex.bib", "r", encoding="utf-8") as lines:
             for line in lines:
                 ans += line
-        print(ans)
+        # print(ans)
         return ans
 
     @property
@@ -86,20 +85,20 @@ class Works:
         return ris
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Add some integers.")
-    parser.add_argument("-r", "--ris")
-    parser.add_argument("-b", "--bibtex")
-    # print(sys.argv)
-    args = parser.parse_args()
-    if args.ris:
-        works = Works(args.ris)
-        print(str(works.ris))
-    elif args.bibtex:
-        works = Works(args.bibtex)
-        works.bibtex
-    # w = Works(args)
-    # print("Bibtex enty is below")
-    # w.bibtex
-    # print("Ris data is below")
-    # w.ris
+# if __name__ == "__main__":
+#     parser = argparse.ArgumentParser(description="Add some integers.")
+#     parser.add_argument("-r", "--ris")
+#     parser.add_argument("-b", "--bibtex")
+#     # print(sys.argv)
+#     args = parser.parse_args()
+#     if args.ris:
+#         works = Works(args.ris)
+#         print(str(works.ris))
+#     elif args.bibtex:
+#         works = Works(args.bibtex)
+#         print(works.bibtex)
+# w = Works(args)
+# print("Bibtex enty is below")
+# w.bibtex
+# print("Ris data is below")
+# w.ris

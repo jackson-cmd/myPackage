@@ -10,6 +10,7 @@ setup(
     maintainer_email="mengxiaw@andrew.cmu.edu",
     license="MIT",
     packages=["package"],
+    entry_points={"console_scripts": ["oa = package.main:main"]},
     scripts=[],
     long_description="""A set of OpenAlex utilities""",
 )
