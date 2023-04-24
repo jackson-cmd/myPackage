@@ -1,5 +1,5 @@
 """A package for bibtex utilities testing."""
-from pkg import Works
+from package import Works
 
 A = "@article{kitchin-2015,\n DATE_ADDED = {2023-04-16T17:13:17.193190},\n "
 B = "author = {John R. Kitchin},\n doi = {https://doi.org/10.1021/acscatal.5b00538},\n "

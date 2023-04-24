@@ -1,5 +1,5 @@
 """A package for bibtex utilities testing."""
-from pkg import Works
+from package import Works
 
 REF = """TY  - JOUR
 AU  - John R. Kitchin
